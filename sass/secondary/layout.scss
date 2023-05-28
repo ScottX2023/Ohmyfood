@@ -1,0 +1,63 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    background-color: $secondary-bg-color;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    padding: 20px;
+    margin-top: -50px;
+    z-index: 3;
+    position: relative;
+
+    @media screen and (min-width: 1300px) {
+      margin-right: 100px;
+      margin-left: 100px;
+    }
+ 
+      
+        h2 {
+        font-family: $font-secondary;
+        font-size: 50px;
+        flex: 1;
+
+        @media screen and (min-width: 1300px) {
+          flex: 0;
+          font-size: 36px;
+          white-space: nowrap; 
+        }
+       }
+    
+       .title-container {
+        display: flex;
+        align-items: center;
+
+        @media screen and (min-width: 1300px) {
+          justify-content: center;
+        }
+      
+        .heart__icon {
+          display: flex;
+          width: 20%;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+        .sub-title {
+            font-family: $font-primary;
+            font-size: 36px;
+            display: inline-block;
+            position: relative;
+
+            &::after  {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 60%;
+                height: 2px;
+                background-color: #99e2d0;
+            }
+        }
+
+}

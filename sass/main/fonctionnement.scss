@@ -1,0 +1,61 @@
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .fonctionnement__card {
+      display: flex;
+      justify-content: space-evenly;
+      width: 60%;
+      height: 100px;
+      background-color: #f6f6f6;
+      margin: 10px;
+      border-radius: 20px;
+      align-items: center;
+      position: relative;
+
+      &-number {
+        position: absolute;
+        top: 30px;
+        left: -20px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: #9356DC;
+        color: #fff;
+        font-size: 30px;
+        line-height: 40px;
+        text-indent: 13px;
+        overflow: hidden;
+      }
+
+      &-icon {
+        font-size: 30px;
+      }
+
+      &-text {
+        font-family: $font-primary;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .fonctionnement {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  
+  .fonctionnement__cards {
+    flex-direction: row;
+  }
+
+}
