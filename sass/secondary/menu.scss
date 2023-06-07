@@ -2,74 +2,89 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
 
-.card {
-  display: flex;
-  border-radius: 30px;
-  background-color: #fff;
-  justify-content: space-between;
-  position: relative;
-  overflow: hidden;
-
-  &__content {
+  .card {
     display: flex;
-    flex-direction: column;
-    padding: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 75%;
-  }
-
-  &__title {
-    font-size: 26px;
-    font-family: $font-primary;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-
-  &__description {
-    font-size: 22px;
-    font-family: $font-primary;
-    margin-bottom: 10px;
-  }
-
-  &__price {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    border-radius: 30px;
+    background-color: #fff;
+    justify-content: space-between;
     position: relative;
-    width: 15%;
-    padding: 15px;
-    transition: transform 0.4s ease-in-out;
-  }
+    overflow: hidden;
 
-  &__check {
-    display: flex;
-    visibility: hidden;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 30px 30px 0;
-    margin-right: -100px;
-    width: 15%;
-    background-color: #99E2D0;
-    transition: margin-right 0.4s ease-in-out;
-
-    &:hover,
-    .card:hover & {
-      visibility: visible;
-      margin-right: 0;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: baseline;
+      position: relative;
+      width: 100%;
+      padding: 15px;
+      transition: all 6000ms;
+      text-overflow: ellipsis;
     }
 
-    &::after {
-      content: '\2713';
-      padding: 10px;
-      border-radius: 50%;
-      color: #99E2D0;
-      font-size: 20px;
-      background-color: #fff;
+    &__title {
+      font-size: 26px;
+      font-family: $font-primary;
+      margin-top: 0;
+      margin-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &__description {
+      font-size: 22px;
+      font-family: $font-primary;
+      margin-bottom: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &__price {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      position: relative;
+      width: 15%;
+      padding: 15px;
       transition: transform 0.4s ease-in-out;
     }
+
+    &__check {
+      width: 0%;
+      transition: all 400ms ease-in-out;
+      background-color: #99e2d0;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      .fa-check-circle {
+        position: relative;
+        opacity: 0;
+        font-size: 1.25rem;
+        transition: opacity 500ms ease-in-out;
+        width: 0%;
+        color: transparent;
+      }
+    }
+
+    &:hover {
+      .card__check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+        background-color: #99e2d0;
+        position: relative;
+        border-radius: 0 15px 15px 0;
+
+        .fa-check-circle {
+          opacity: 1;
+          background-color: #99e2d0;
+          color: white;
+        }
+      }
+    }
   }
 }
-
