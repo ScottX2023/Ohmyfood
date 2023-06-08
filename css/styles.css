@@ -448,7 +448,6 @@ h2, p {
   opacity: 0;
   font-size: 1.25rem;
   transition: opacity 500ms ease-in-out;
-  width: 0%;
   color: transparent;
 }
 .card-group .card:hover .card__check {
