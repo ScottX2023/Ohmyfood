@@ -13,36 +13,30 @@
     & .fonctionnement__card {
       display: flex;
       justify-content: space-evenly;
-      width: 60%;
-      height: 100px;
       background-color: #f6f6f6;
       margin: 10px;
+      padding: 10px;
       border-radius: 20px;
       align-items: center;
       position: relative;
+      width: 80%;
 
       &-number {
         position: absolute;
-        top: 30px;
-        left: -20px;
+        left: -10px;
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
         background-color: #9356DC;
         color: #fff;
-        font-size: 30px;
-        line-height: 40px;
-        text-indent: 13px;
         overflow: hidden;
+        text-indent: 6px;
       }
 
-      &-icon {
-        font-size: 30px;
-      }
 
       &-text {
         font-family: $font-primary;
-        font-size: 22px;
+        
       }
     }
   }

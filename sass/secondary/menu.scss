@@ -3,9 +3,10 @@
   flex-direction: column;
   gap: 20px;
 
+
   .card {
     display: flex;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: #fff;
     justify-content: space-between;
     position: relative;
@@ -13,32 +14,31 @@
 
     &__content {
       display: flex;
+      flex-grow: 1;
+      flex-shrink: 1;
       flex-direction: column;
-      justify-content: left;
-      align-items: baseline;
-      position: relative;
-      width: 100%;
-      padding: 15px;
+      padding: 10px;
       transition: all 6000ms;
+      overflow: hidden;
       text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     &__title {
-      font-size: 26px;
       font-family: $font-primary;
       margin-top: 0;
       margin-bottom: 10px;
       overflow: hidden;
       text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     &__description {
-      font-size: 22px;
       font-family: $font-primary;
-      margin-bottom: 10px;
-      white-space: nowrap;
+      margin: 0;
       overflow: hidden;
       text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     &__price {
@@ -46,8 +46,8 @@
       align-items: flex-end;
       justify-content: flex-end;
       position: relative;
-      width: 15%;
-      padding: 15px;
+      font-family: $font-primary;
+      padding: 10px;
       transition: transform 0.4s ease-in-out;
     }
 
@@ -66,14 +66,14 @@
         transition: opacity 500ms ease-in-out;
         color: transparent;
       }
-    }
+    }       
 
     &:hover {
       .card__check {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 15%;
+        width: 25%;
         background-color: #99e2d0;
         position: relative;
         border-radius: 0 15px 15px 0;

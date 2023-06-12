@@ -1,6 +1,6 @@
 .btn {
     background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-    height: 50px;
+    height: 40px;
     border-radius: 25px;
     border: none;
     color: #fff;
@@ -8,18 +8,21 @@
     margin-bottom: 20px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
-    &__wide {
-        width: 35%;
-        font-size: 22px;
-        
+    &__wide {   
+      
+      width: 175px;
+      
         @media screen and (min-width: 1300px) {
-            width: 25%;
+            width: 15%;
           }
     }
 
     &__small {
+      width: 125px;
+  
+      @media screen and (min-width: 1300px) {
         width: 20%;
-        font-size: 20px;
+      }
     }
 
     &:hover {

@@ -3,15 +3,11 @@ header {
     align-items: center;
     justify-content: center;
     font-family: $font-secondary;
-    font-size: 26px;
     position: relative;
         
         a {
             position: absolute;
-            left: 80px;
+            left: 20px;
         }
 
-        i {
-            font-size: 40px;
-        }
 }
