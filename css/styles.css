@@ -388,17 +388,17 @@ h2, p {
   justify-content: space-between;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 .card-group .card__content {
   display: flex;
-  flex-grow: 1;
-  flex-shrink: 1;
   flex-direction: column;
   padding: 10px;
   transition: all 6000ms;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  width: 70%;
 }
 .card-group .card__title {
   font-family: "Roboto", sans-serif;
@@ -419,10 +419,10 @@ h2, p {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  position: relative;
   font-family: "Roboto", sans-serif;
-  padding: 10px;
+  padding: 0px 10px 10px 0px;
   transition: transform 0.4s ease-in-out;
+  width: 30%;
 }
 .card-group .card__check {
   width: 0%;
@@ -443,7 +443,7 @@ h2, p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25%;
+  width: 65px;
   background-color: #99e2d0;
   position: relative;
   border-radius: 0 15px 15px 0;
